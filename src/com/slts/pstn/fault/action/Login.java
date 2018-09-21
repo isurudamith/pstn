@@ -9,12 +9,12 @@ import javax.ws.rs.Produces;
 @Path("/login")
 public class Login {
 	
-//	@GET
-//	@Produces
-//	public String Log (MediaType) {
-//		String responses =null;
-//		return responses ;
-//	}
+    @GET
+	@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+	public String Log() {
+		String responses ="HELLO";
+		return responses ;
+	}
 //	
 //	@GET
 //	@Produces

@@ -9,4 +9,21 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+ 
+
+<servlet>
+    <servlet-name>JAVA WS</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer.class</servlet-class>
+    <init-param><param-name>jersey.config.server.provider.packages</param-name>
+                <param-value>com.slts.pstn.fault.action</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+
+  <servlet-mapping>
+  <servlet-name>JAVA WS</servlet-name>
+  <url-pattern>/*</url-pattern>
+</servlet-mapping>
+  
 </web-app>
