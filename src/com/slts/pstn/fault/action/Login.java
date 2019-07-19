@@ -5,8 +5,9 @@ package com.slts.pstn.fault.action;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
-@Path("/login")
+@Path("/")
 public class Login {
 	
   /*  @GET
@@ -20,7 +21,7 @@ public class Login {
 //	
 	
 	 @GET
-		@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+		@Produces(MediaType.APPLICATION_JSON)
 		public String Log() {
 			String responses ="HELLO";
 			return responses ;
